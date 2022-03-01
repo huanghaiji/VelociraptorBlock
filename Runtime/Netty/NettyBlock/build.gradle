@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+version '3.2.1.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    implementation group: 'io.netty', name: 'netty-all', version: '4.1.38.Final'
+
+    implementation project(':Block')
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+

@@ -1,0 +1,14 @@
+rootProject.name = 'Velociraptor'
+
+
+include 'ClassRoute'
+project(':ClassRoute').projectDir = file('Framework/ClassRoute')
+
+include 'Block'
+project(':Block').projectDir = file('Framework/Block')
+
+include 'SocketDataProxyService'
+project(':SocketDataProxyService').projectDir=file('Framework/SocketDataProxyService')
+
+include 'NettyBlock'
+project(':NettyBlock').projectDir = file('Runtime/Netty/NettyBlock')

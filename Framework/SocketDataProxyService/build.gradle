@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+version '1.2'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.11'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation project(':NettyBlock')
+    testImplementation group: 'io.netty', name: 'netty-all', version: '4.1.38.Final'
+
+    implementation project(':Block')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

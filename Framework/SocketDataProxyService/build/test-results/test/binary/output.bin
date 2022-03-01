@@ -1,0 +1,17 @@
+low:32768 high:65536
+connection-timeout:30000ms
+threadWorker user
+threadWorker end
+init channel....
+-----------------------------ctx:open--------
+-socket.NettyBlockUser@5e2e9db9 >> open false
+active
+,socket.NettyBlockUser@5e2e9db9 >> open true
++ok,登录完成:{admin,123456} >>>login ok
+!ok,通知加载完成:通知一
+通知二
+
+通知三
+Eok,议题加载完成:1，迅猛龙的架构中FRA分别指那三层
+
+<socket.NettyBlockUser@5e2e9db9 >> close,pc.appdoor.mac.0002

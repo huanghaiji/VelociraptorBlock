@@ -1,0 +1,4 @@
+
+
+2019年
+BlockBytes类的CharId 只取 2 位长度的值。【setCharId】
