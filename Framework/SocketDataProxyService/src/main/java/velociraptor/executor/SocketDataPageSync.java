@@ -35,9 +35,7 @@ public class SocketDataPageSync extends BlockQueueSync implements SocketDataPage
         return this;
     }
 
-    /**
-     * 发送数据，并且发生阻塞
-     */
+
     public SocketDataPageSync onSending(byte[] bytes, String location) {
         service.checkBlockUserInterfaceLocation(user, location);
         Block block = new BlockData(pid, charId, location);

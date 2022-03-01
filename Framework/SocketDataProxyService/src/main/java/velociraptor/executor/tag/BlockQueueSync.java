@@ -46,6 +46,9 @@ public abstract class BlockQueueSync implements ISync {
         }
     }
 
+    /**
+     * 发送数据，并且发生阻塞
+     */
     public Block waitReadLine() {
         if (!blocks.isEmpty())
             return blocks.poll();
